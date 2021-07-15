@@ -17,6 +17,10 @@ const routes: Routes = [
     path: 'computer',
     component: ComputerComponent
   },
+  {
+    path: 'twice',
+    loadChildren: () => import('./page/twice/twice.module').then(mod => mod.TwiceModule),
+  }
 ];
 
 @NgModule({
