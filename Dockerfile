@@ -1,5 +1,5 @@
 # pull nginx image
-FROM registry.groupt.fbt.com/tpebnkapbankt/nginx:1.21.1
+FROM bitnami/nginx:1.21.1
 
 # 從第一階段的檔案copy
 COPY ./dist/ng-deploy-nginx /var/www/html/abc
