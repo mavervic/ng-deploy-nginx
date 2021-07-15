@@ -2,6 +2,14 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.12.
 
+## 如何將此專案部屬到nginx的子目錄上
+
+1. ng build --base-href /abc/
+2. docker image build -t abctest .
+3. docker container run -p 4200:4200 abctest
+
+
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
