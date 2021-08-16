@@ -10,6 +10,13 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ## binami/nginx image
 
+https://hub.docker.com/r/bitnami/nginx
+
+## nginx/alpine image
+
+https://github.com/bitnami/bitnami-docker-nginx
+
+https://hub.docker.com/_/nginx
 
 
 ## Development server
