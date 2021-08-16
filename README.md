@@ -2,7 +2,7 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.12.
 
-## 如何將此專案部屬到nginx的子目錄上
+## 如何將此專案部屬到bitnami/nginx或nginx/alpine的子目錄上
 
 1. ng build --base-href /abc/
 2. docker image build -t abctest .
