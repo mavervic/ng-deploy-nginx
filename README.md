@@ -8,6 +8,8 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 2. docker image build -t abctest .
 3. docker container run -p 4200:4200 abctest
 
+## binami/nginx image
+
 
 
 ## Development server
