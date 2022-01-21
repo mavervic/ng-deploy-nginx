@@ -3,24 +3,31 @@ import { RouterModule, Routes } from '@angular/router';
 import { AcerComponent } from './acer/acer.component';
 import { AocComponent } from './aoc/aoc.component';
 import { BenqComponent } from './benq/benq.component';
+import { MonitorComponent } from './monitor.component';
 
 const routes: Routes = [
   {
     path: '',
-    redirectTo: 'Index',
-    pathMatch: 'full',
-  },
-  {
-    path: 'Index',
-    component: BenqComponent,
-  },
-  {
-    path: 'acer',
-    component: AcerComponent,
-  },
-  {
-    path: 'aoc',
-    component: AocComponent,
+    component: MonitorComponent,
+    children: [
+      {
+        path: '',
+        redirectTo: 'Index',
+        pathMatch: 'full',
+      },
+      {
+        path: 'Index',
+        component: BenqComponent,
+      },
+      {
+        path: 'acer',
+        component: AcerComponent,
+      },
+      {
+        path: 'aoc',
+        component: AocComponent,
+      },
+    ],
   },
 ];
 

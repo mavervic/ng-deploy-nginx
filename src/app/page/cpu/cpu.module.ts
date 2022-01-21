@@ -4,12 +4,14 @@ import { CpuRoutingModule } from './cpu-routing.module';
 import { AppleComponent } from './apple/apple.component';
 import { IntelComponent } from './intel/intel.component';
 import { AmdComponent } from './amd/amd.component';
+import { CpuComponent } from './cpu.component';
 
 @NgModule({
   declarations: [
     AppleComponent,
     IntelComponent,
-    AmdComponent
+    AmdComponent,
+    CpuComponent
   ],
   imports: [CommonModule, CpuRoutingModule],
 })

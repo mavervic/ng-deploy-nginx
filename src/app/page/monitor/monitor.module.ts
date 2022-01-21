@@ -1,21 +1,11 @@
-import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-
+import { NgModule } from '@angular/core';
 import { MonitorRoutingModule } from './monitor-routing.module';
-import { AocComponent } from './aoc/aoc.component';
-import { AcerComponent } from './acer/acer.component';
-import { BenqComponent } from './benq/benq.component';
-
+import { MonitorComponent } from './monitor.component';
 
 @NgModule({
-  declarations: [
-    AocComponent,
-    AcerComponent,
-    BenqComponent
-  ],
-  imports: [
-    CommonModule,
-    MonitorRoutingModule
-  ]
+  declarations: [MonitorComponent],
+  imports: [CommonModule, MonitorRoutingModule],
+  bootstrap: [MonitorComponent],
 })
-export class MonitorModule { }
+export class MonitorModule {}
