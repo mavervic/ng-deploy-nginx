@@ -1,30 +1,24 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { BookComponent } from './page/book/book.component';
-import { ComputerComponent } from './page/computer/computer.component';
+import { ErrorComponent } from './page/error/error.component';
 
 const routes: Routes = [
   {
-    path: '',
-    pathMatch: 'full',
-    redirectTo: 'book'
+    path: 'PC/CPU',
+    loadChildren: () => import('./page/cpu/cpu.module').then((mod) => mod.CpuModule),
   },
   {
-    path: 'book',
-    component: BookComponent
+    path: 'PC/MONITOR',
+    loadChildren: () => import('./page/monitor/monitor.module').then((mod) => mod.MonitorModule),
   },
   {
-    path: 'computer',
-    component: ComputerComponent
+    path: '**',
+    component: ErrorComponent,
   },
-  {
-    path: 'twice',
-    loadChildren: () => import('./page/twice/twice.module').then(mod => mod.TwiceModule),
-  }
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}

@@ -16,7 +16,7 @@ docker image build -t abctest .
 ```
 
 ```powershell
-docker container run -p 4200:4200 abctest
+docker container run --rm -d -p 4201:4200 abctest
 ```
 
 
