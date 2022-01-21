@@ -18,7 +18,23 @@ docker image build -t abctest .
 docker container run --rm -d -p 4201:4200 abctest
 ```
 
-訪問: [localhost:4201](localhost:4201)
+訪問: [localhost:4201](http://localhost:4201)
+
+<details>
+  <summary>CPU相關路徑</summary>
+
+  * [Apple](http://localhost:4201/PC/CPU/Index)
+  * [Intel](http://localhost:4201/PC/CPU/intel)
+  * [Amd](http://localhost:4201/PC/CPU/amd)
+</details>
+
+<details>
+  <summary>MONITOR相關路徑</summary>
+
+  * [BenQ](http://localhost:4201/PC/MONITOR/Index)
+  * [Acer](http://localhost:4201/PC/MONITOR/acer)
+  * [AOC](http://localhost:4201/PC/MONITOR/aoc)
+</details>
 
 ## 相關image，擇一即可
 * [binami/nginx image](https://hub.docker.com/r/bitnami/nginx)
